@@ -6,6 +6,268 @@
     android:layout_height="match_parent"
     tools:context=".SinglePlayerActivity">
 
+    <CheckBox
+        android:id="@+id/cellspg20Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:checked="false"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg21Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg22Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg23Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <CheckBox
+        android:id="@+id/cellspg24Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <CheckBox
+        android:id="@+id/cellspg25Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <CheckBox
+        android:id="@+id/cellspg26Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <CheckBox
+        android:id="@+id/cellspg27Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <CheckBox
+        android:id="@+id/cellspg28Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <CheckBox
+        android:id="@+id/cellspg10Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:checked="false"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg11Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg12Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg13Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <CheckBox
+        android:id="@+id/cellspg14Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <CheckBox
+        android:id="@+id/cellspg15Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <CheckBox
+        android:id="@+id/cellspg16Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <CheckBox
+        android:id="@+id/cellspg17Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <CheckBox
+        android:id="@+id/cellspg18Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
     <ImageView
         android:id="@+id/boardspgImageView"
         android:layout_width="318dp"
@@ -78,4 +340,128 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.863" />
+
+    <CheckBox
+        android:id="@+id/cellspg00Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:checked="false"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg01Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg02Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cellspg03Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <CheckBox
+        android:id="@+id/cellspg04Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <CheckBox
+        android:id="@+id/cellspg05Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <CheckBox
+        android:id="@+id/cellspg06Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <CheckBox
+        android:id="@+id/cellspg07Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <CheckBox
+        android:id="@+id/cellspg08Button"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boardspgImageView"
+        app:layout_constraintEnd_toEndOf="@+id/boardspgImageView"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="@+id/boardspgImageView"
+        app:layout_constraintTop_toTopOf="@+id/boardspgImageView"
+        app:layout_constraintVertical_bias="0.231" />
+
 </android.support.constraint.ConstraintLayout>
