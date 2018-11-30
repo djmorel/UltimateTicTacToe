@@ -1,10 +1,12 @@
 package djmorel.bu.edu.ultimatetictactoe;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -16,6 +18,8 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
     private ToggleButton[][] tbuttons = new ToggleButton[3][3];
 
     private TextView[][] cellmoves = new TextView[3][3];
+
+    private TextView[][] cellwins = new TextView[3][3];
 
     private boolean player1Turn = true;
 
@@ -90,6 +94,7 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                 if (selButton)
                 {
                     tbuttons[row][col].setVisibility(View.INVISIBLE);
+                    tbuttons[row][col].setChecked(false);
                     tbuttons[row][col].setEnabled(false);
 
                     //Make sure the TextView is empty
@@ -103,10 +108,10 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                         else
                             cellmoves[row][col].setText("O");
                     }
-                }
 
-                //Change player turn
-                player1Turn = !player1Turn;
+                    //Change player turn
+                    player1Turn = !player1Turn;
+                }
             }
         });
 
@@ -138,11 +143,13 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
             for (int j = 0; j < 3; j++)
             {
                 tbuttons[i][j].setChecked(false);
+                tbuttons[i][j].setBackgroundColor(Color.WHITE);
             }
         }
 
         //Turn on the selected toggle button
         ((ToggleButton) v).setChecked(true);
+        v.setBackgroundColor(Color.GREEN);
     }
 
     //Resets the board
@@ -159,11 +166,11 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                 tbuttons[i][j].setEnabled(true);
                 tbuttons[i][j].setVisibility(View.VISIBLE);
                 tbuttons[i][j].setChecked(false);
-
-                //Reset the player1Turn
-                player1Turn = true;
+                tbuttons[i][j].setBackgroundColor(Color.WHITE);
             }
         }
+        //Reset the player1Turn
+        player1Turn = true;
     }
 
     private void player1Wins()

@@ -87,10 +87,11 @@
     //Top row
     <ToggleButton
         android:id="@+id/tButton0000"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
         android:textOff=""
-        android:textOn="-"
+        android:textOn=""
+        android:background="#ffffff"
         android:textAllCaps="false"
         android:textSize="8sp"
         android:visibility="visible"
@@ -102,41 +103,45 @@
         app:layout_constraintVertical_bias="0.006" />
     <ToggleButton
         android:id="@+id/tButton0001"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
         android:textOff=""
-        android:textOn="-"
+        android:textOn=""
+        android:background="#ffffff"
         android:textAllCaps="false"
         android:textSize="8sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.006" />
+
     <ToggleButton
         android:id="@+id/tButton0002"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
-        android:textOff=""
-        android:textOn="-"
+        android:background="#ffffff"
         android:textAllCaps="false"
+        android:textOff=""
+        android:textOn=""
         android:textSize="8sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.006" />
     //Middle row
     <ToggleButton
         android:id="@+id/tButton0010"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
         android:textOff=""
-        android:textOn="-"
+        android:textOn=""
+        android:background="#ffffff"
         android:textAllCaps="false"
         android:textSize="8sp"
         android:visibility="visible"
@@ -145,45 +150,48 @@
         app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintVertical_bias="0.1199" />
     <ToggleButton
         android:id="@+id/tButton0011"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
         android:textOff=""
-        android:textOn="-"
+        android:textOn=""
+        android:background="#ffffff"
         android:textAllCaps="false"
         android:textSize="8sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintVertical_bias="0.1199" />
     <ToggleButton
         android:id="@+id/tButton0012"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
-        android:textOff=""
-        android:textOn="-"
+        android:background="#ffffff"
         android:textAllCaps="false"
+        android:textOff=""
+        android:textOn=""
         android:textSize="8sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintVertical_bias="0.1199" />
     //Bottom row
     <ToggleButton
         android:id="@+id/tButton0020"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
-        android:textOff=""
-        android:textOn="-"
+        android:background="#ffffff"
         android:textAllCaps="false"
+        android:textOff=""
+        android:textOn=""
         android:textSize="8sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -191,39 +199,41 @@
         app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.23000002" />
+        app:layout_constraintVertical_bias="0.235" />
+
     <ToggleButton
         android:id="@+id/tButton0021"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
-        android:textOff=""
-        android:textOn="-"
+        android:background="#ffffff"
         android:textAllCaps="false"
+        android:textOff=""
+        android:textOn=""
         android:textSize="8sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.23000002" />
+        app:layout_constraintVertical_bias="0.235" />
+
     <ToggleButton
         android:id="@+id/tButton0022"
-        android:layout_width="29dp"
+        android:layout_width="28dp"
         android:layout_height="28dp"
-        android:textOff=""
-        android:textOn="-"
+        android:background="#ffffff"
         android:textAllCaps="false"
+        android:textOff=""
+        android:textOn=""
         android:textSize="8sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.23000002" />
-
-
+        app:layout_constraintVertical_bias="0.235" />
 
     //TextView
 
@@ -253,6 +263,7 @@
         app:layout_constraintStart_toStartOf="@+id/tButton0001"
         app:layout_constraintTop_toTopOf="@+id/tButton0001"
         app:layout_constraintVertical_bias="0.63" />
+
     <TextView
         android:id="@+id/TextView0002"
         android:layout_width="14dp"
@@ -261,7 +272,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/tButton0002"
         app:layout_constraintEnd_toEndOf="@+id/tButton0002"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@+id/tButton0002"
         app:layout_constraintTop_toTopOf="@+id/tButton0002"
         app:layout_constraintVertical_bias="0.63" />
