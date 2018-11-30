@@ -18,6 +18,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3"
@@ -78,4 +79,266 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.861" />
+
+
+    //Toggle buttons
+    //Big Cell 0
+
+    //Top row
+    <ToggleButton
+        android:id="@+id/tButton0000"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.006" />
+    <ToggleButton
+        android:id="@+id/tButton0001"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.006" />
+    <ToggleButton
+        android:id="@+id/tButton0002"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.006" />
+    //Middle row
+    <ToggleButton
+        android:id="@+id/tButton0010"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.120000005" />
+    <ToggleButton
+        android:id="@+id/tButton0011"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.120000005" />
+    <ToggleButton
+        android:id="@+id/tButton0012"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.120000005" />
+    //Bottom row
+    <ToggleButton
+        android:id="@+id/tButton0020"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.23000002" />
+    <ToggleButton
+        android:id="@+id/tButton0021"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.23000002" />
+    <ToggleButton
+        android:id="@+id/tButton0022"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:textOff=""
+        android:textOn="-"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+
+
+    //TextView
+
+    //Big Cell 0
+    //Top row
+    <TextView
+        android:id="@+id/TextView0000"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0000"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0000"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0000"
+        app:layout_constraintTop_toTopOf="@+id/tButton0000"
+        app:layout_constraintVertical_bias="0.63" />
+    <TextView
+        android:id="@+id/TextView0001"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0001"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0001"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0001"
+        app:layout_constraintTop_toTopOf="@+id/tButton0001"
+        app:layout_constraintVertical_bias="0.63" />
+    <TextView
+        android:id="@+id/TextView0002"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0002"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0002"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0002"
+        app:layout_constraintTop_toTopOf="@+id/tButton0002"
+        app:layout_constraintVertical_bias="0.63" />
+    //Middle row
+    <TextView
+        android:id="@+id/TextView0010"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0010"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0010"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0010"
+        app:layout_constraintTop_toTopOf="@+id/tButton0010"
+        app:layout_constraintVertical_bias="0.63" />
+    <TextView
+        android:id="@+id/TextView0011"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0011"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0011"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0011"
+        app:layout_constraintTop_toTopOf="@+id/tButton0011"
+        app:layout_constraintVertical_bias="0.63" />
+    <TextView
+        android:id="@+id/TextView0012"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0012"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0012"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0012"
+        app:layout_constraintTop_toTopOf="@+id/tButton0012"
+        app:layout_constraintVertical_bias="0.63" />
+    //Bottom row
+    <TextView
+        android:id="@+id/TextView0020"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0020"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0020"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0020"
+        app:layout_constraintTop_toTopOf="@+id/tButton0020"
+        app:layout_constraintVertical_bias="0.63" />
+    <TextView
+        android:id="@+id/TextView0021"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0021"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0021"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0021"
+        app:layout_constraintTop_toTopOf="@+id/tButton0021"
+        app:layout_constraintVertical_bias="0.63" />
+    <TextView
+        android:id="@+id/TextView0022"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tButton0022"
+        app:layout_constraintEnd_toEndOf="@+id/tButton0022"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/tButton0022"
+        app:layout_constraintTop_toTopOf="@+id/tButton0022"
+        app:layout_constraintVertical_bias="0.63" />
+
+
 </android.support.constraint.ConstraintLayout>
