@@ -241,7 +241,7 @@
     //Top row
     <TextView
         android:id="@+id/TextView0000"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
@@ -253,7 +253,7 @@
         app:layout_constraintVertical_bias="0.63" />
     <TextView
         android:id="@+id/TextView0001"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
@@ -266,7 +266,7 @@
 
     <TextView
         android:id="@+id/TextView0002"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
@@ -279,7 +279,7 @@
     //Middle row
     <TextView
         android:id="@+id/TextView0010"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
@@ -289,9 +289,10 @@
         app:layout_constraintStart_toStartOf="@+id/tButton0010"
         app:layout_constraintTop_toTopOf="@+id/tButton0010"
         app:layout_constraintVertical_bias="0.63" />
+
     <TextView
         android:id="@+id/TextView0011"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
@@ -303,7 +304,7 @@
         app:layout_constraintVertical_bias="0.63" />
     <TextView
         android:id="@+id/TextView0012"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
@@ -316,7 +317,7 @@
     //Bottom row
     <TextView
         android:id="@+id/TextView0020"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
@@ -328,7 +329,7 @@
         app:layout_constraintVertical_bias="0.63" />
     <TextView
         android:id="@+id/TextView0021"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
@@ -340,7 +341,7 @@
         app:layout_constraintVertical_bias="0.63" />
     <TextView
         android:id="@+id/TextView0022"
-        android:layout_width="14dp"
+        android:layout_width="18dp"
         android:layout_height="31dp"
         android:text=""
         android:textSize="24sp"
