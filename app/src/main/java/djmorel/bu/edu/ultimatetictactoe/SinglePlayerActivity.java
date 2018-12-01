@@ -6,17 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class SinglePlayerActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private ToggleButton[][] tbuttons = new ToggleButton[3][3];
+    private ToggleButton[][][][] tbuttons = new ToggleButton[3][3][3][3];
 
-    private TextView[][] cellmoves = new TextView[3][3];
+    private TextView[][][][] cellmoves = new TextView[3][3][3][3];
 
     private TextView[][] cellwins = new TextView[3][3];
 
@@ -37,10 +35,16 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         {
             for (int j = 0; j < 3; j++)
             {
-                String buttonID = "tButton00" + i + j;
-                int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
-                tbuttons[i][j] = findViewById(resID);
-                tbuttons[i][j].setOnClickListener(this);
+                for (int k = 0; k < 3; k++)
+                {
+                    for (int l = 0; l < 3; l++)
+                    {
+                        String buttonID = "tButton" + i + j + k + l;
+                        int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+                        tbuttons[i][j][k][l] = findViewById(resID);
+                        tbuttons[i][j][k][l].setOnClickListener(this);
+                    }
+                }
             }
         }
 
@@ -49,10 +53,17 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         {
             for (int j = 0; j < 3; j++)
             {
-                String textViewID = "TextView00" + i + j;
-                int resID = getResources().getIdentifier(textViewID, "id", getPackageName());
-                cellmoves[i][j] = findViewById(resID);
-                cellmoves[i][j].setText("");
+                for (int k = 0; k < 3; k++)
+                {
+                    for (int l = 0; l < 3; l++)
+                    {
+                        String textViewID = "TextView" + i + j + k + l;
+                        int resID = getResources().getIdentifier(textViewID, "id", getPackageName());
+                        cellmoves[i][j][k][l] = findViewById(resID);
+                        cellmoves[i][j][k][l].setText("");
+                    }
+                }
+
             }
         }
 
@@ -72,19 +83,29 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                 //Make a blank int that will store the selected Toggle Button ID
                 //int selTButtonID = 0;
                 boolean selButton = false;
-                int row = 0;
-                int col = 0;
+                int Brow = 0;
+                int Bcol = 0;
+                int Srow = 0;
+                int Scol = 0;
 
                 //Search for the checked Toggle Button
                 for (int i = 0; i < 3; i++)
                 {
                     for (int j = 0; j < 3; j++)
                     {
-                        if (tbuttons[i][j].isChecked())
+                        for (int k = 0; k < 3; k++)
                         {
-                            selButton = true;
-                            row = i;
-                            col = j;
+                            for (int l = 0; l < 3; l++)
+                            {
+                                if (tbuttons[i][j][k][l].isChecked())
+                                {
+                                    selButton = true;
+                                    Brow = i;
+                                    Bcol = j;
+                                    Srow = k;
+                                    Scol = l;
+                                }
+                            }
                         }
                     }
                 }
@@ -92,20 +113,20 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                 //If a toggle button was checked, remove it from the board
                 if (selButton)
                 {
-                    tbuttons[row][col].setVisibility(View.INVISIBLE);
-                    tbuttons[row][col].setChecked(false);
-                    tbuttons[row][col].setEnabled(false);
+                    tbuttons[Brow][Bcol][Srow][Scol].setVisibility(View.INVISIBLE);
+                    tbuttons[Brow][Bcol][Srow][Scol].setChecked(false);
+                    tbuttons[Brow][Bcol][Srow][Scol].setEnabled(false);
 
                     //Make sure the TextView is empty
-                    if(cellmoves[row][col].getText().equals(""))
+                    if (cellmoves[Brow][Bcol][Srow][Scol].getText().equals(""))
                     {
                         //Write an X or an O
                         if (player1Turn)
                         {
-                            cellmoves[row][col].setText("X");
+                            cellmoves[Brow][Bcol][Srow][Scol].setText("X");
                         }
                         else
-                            cellmoves[row][col].setText("O");
+                            cellmoves[Brow][Bcol][Srow][Scol].setText("O");
                     }
 
                     //Change player turn
@@ -122,14 +143,15 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
             }
         });
 
+
+
         //Code to scale size of TTT board based on device
         //Make sure it doesn't mess with the button layout!
 
-        //Back end code for the TTT game (maybe it goes here...)
 
     }
 
-
+    //Makes sure only one toggle button is selected at a time
     @Override
     public void onClick(View v) {
 
@@ -138,8 +160,14 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         {
             for (int j = 0; j < 3; j++)
             {
-                tbuttons[i][j].setChecked(false);
-                tbuttons[i][j].setBackgroundColor(Color.WHITE);
+                for (int k = 0; k < 3; k++)
+                {
+                    for (int l = 0; l < 3; l++)
+                    {
+                        tbuttons[i][j][k][l].setChecked(false);
+                        tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
+                    }
+                }
             }
         }
 
@@ -155,14 +183,20 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         {
             for (int j = 0; j < 3; j++)
             {
-                //Remove the Text
-                cellmoves[i][j].setText("");
+                for (int k = 0; k < 3; k++)
+                {
+                    for (int l = 0; l < 3; l++)
+                    {
+                        //Remove the Text
+                        cellmoves[i][j][k][l].setText("");
 
-                //Reset all of the toggle buttons to their initial state
-                tbuttons[i][j].setEnabled(true);
-                tbuttons[i][j].setVisibility(View.VISIBLE);
-                tbuttons[i][j].setChecked(false);
-                tbuttons[i][j].setBackgroundColor(Color.WHITE);
+                        //Reset all of the toggle buttons to their initial state
+                        tbuttons[i][j][k][l].setEnabled(true);
+                        tbuttons[i][j][k][l].setVisibility(View.VISIBLE);
+                        tbuttons[i][j][k][l].setChecked(false);
+                        tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
+                    }
+                }
             }
         }
         //Reset the player1Turn
@@ -186,5 +220,4 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         Toast.makeText(this, "Draw", Toast.LENGTH_SHORT).show();
         resetBoard();
     }
-
 }
