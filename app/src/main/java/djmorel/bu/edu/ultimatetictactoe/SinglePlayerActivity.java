@@ -16,7 +16,9 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
     private TextView[][][][] cellmoves = new TextView[3][3][3][3];
 
-    private TextView[][] cellwins = new TextView[3][3];
+    private String[][] cellwins = new String[3][3];
+
+    private int turn = 0;
 
     private boolean player1Turn = true;
 
@@ -64,6 +66,13 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                     }
                 }
 
+            }
+        }
+        for(int i = 0; i < 3; i++)
+        {
+            for(int j = 0; j < 3; j++)
+            {
+                cellwins[i][j] = "";
             }
         }
 
@@ -128,6 +137,29 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                         else
                             cellmoves[Brow][Bcol][Srow][Scol].setText("O");
                     }
+                    if (CheckSmallWin(Brow, Bcol))
+                    {
+                        if (cellwins[Brow][Bcol].equals(""))
+                        {
+                            if (player1Turn) {
+                                cellwins[Brow][Bcol] = "X";
+                            }
+                            else{
+                                cellwins[Brow][Bcol] = "O";
+                            }
+                        }
+                        if (CheckBigWin())
+
+                            if (player1Turn){
+                                player1Wins();
+                            }
+                            else {
+                                player2Wins();
+                            }
+                    }
+                    if (turn == 81)
+                        draw();
+                    turn++;
 
                     //Change player turn
                     player1Turn = !player1Turn;
@@ -203,21 +235,173 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         player1Turn = true;
     }
 
+    private boolean CheckSmallWin(int Brow, int Bcol)
+    {
+        int count = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            //checks all rows
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellmoves[Brow][Bcol][i][j].getText().equals("X"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellmoves[Brow][Bcol][i][j].getText().equals("O"))
+                count++;
+                if (count == 3)
+                    return true;
+            }
+            count = 0;
+            //checks all columns
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellmoves[Brow][Bcol][j][i].getText().equals("X"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellmoves[Brow][Bcol][j][i].getText().equals("O"))
+                count++;
+                if (count == 3)
+                    return true;
+            }
+            //checks \ diagonal
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellmoves[Brow][Bcol][j][j].getText().equals("X"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellmoves[Brow][Bcol][j][j].getText().equals("O"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+            //checks / diagonal
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellmoves[Brow][Bcol][j][2-j].getText().equals("X"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellmoves[Brow][Bcol][j][2-j].getText().equals("O"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean CheckBigWin()
+    {
+        int count = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            //Check all the rows
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellwins[i][j].equals("X"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellwins[i][j].equals("O"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+            //check all columns
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellwins[j][i].equals("X"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+            count = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                if (cellwins[j][i].equals("O"))
+                    count++;
+                if (count == 3)
+                    return true;
+            }
+        }
+        //check \ diagonal
+        count = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            if (cellwins[i][i].equals("X"))
+                count++;
+            if (count == 3)
+                return true;
+        }
+        count = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            if (cellwins[i][i].equals("O"))
+                count++;
+            if (count == 3)
+                return true;
+        }
+        //check / diagonal
+        count = 0;
+        for (int i = 0; i < 3; i ++)
+        {
+            if (cellwins[2-i][i].equals("X"))
+                count++;
+            if (count == 3)
+                return true;
+        }
+        count = 0;
+        for (int i = 0; i < 3; i ++)
+        {
+            if (cellwins[2-i][i].equals("O"))
+                count++;
+            if (count == 3)
+                return true;
+        }
+        return false;
+    }
+
     private void player1Wins()
     {
         Toast.makeText(this, "Player 1 Wins!", Toast.LENGTH_SHORT).show();
-        resetBoard();
+
     }
 
     private void player2Wins()
     {
         Toast.makeText(this, "Player 2 Wins!", Toast.LENGTH_SHORT).show();
-        resetBoard();
+
     }
 
     private void draw()
     {
         Toast.makeText(this, "Draw", Toast.LENGTH_SHORT).show();
-        resetBoard();
+
     }
 }
