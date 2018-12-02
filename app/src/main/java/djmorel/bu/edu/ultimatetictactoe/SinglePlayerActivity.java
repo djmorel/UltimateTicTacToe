@@ -177,7 +177,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                             }
 
                     }
-                    else if (turn == 81)
+                    if (turn == 80)
                     {
                         draw();
                         confirmspgButton.setEnabled(false);
@@ -187,69 +187,69 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
                     //Change player turn
                     player1Turn = !player1Turn;
-                }
 
-                //Disable all of the buttons
-                //If statement for free play
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
+                    //Disable all of the buttons
+                    //If statement for free play
+                    for (int i = 0; i < 3; i++)
                     {
+                        for (int j = 0; j < 3; j++)
+                        {
+                            for (int k = 0; k < 3; k++)
+                            {
+                                for (int l = 0; l < 3; l++)
+                                {
+                                    //Check if a button hasn't been pressed already
+                                    if (cellmoves[i][j][k][l].getText().equals(""))
+                                    {
+                                        //Disable unselected buttons
+                                        tbuttons[i][j][k][l].setEnabled(false);
+                                        tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //Enable the appropriate buttons if game isn't over
+                    if (!CheckBigWin())
+                    {
+                        //Check if there are any open spaces
+                        boolean isClosed = true;
+
                         for (int k = 0; k < 3; k++)
                         {
                             for (int l = 0; l < 3; l++)
                             {
                                 //Check if a button hasn't been pressed already
-                                if (cellmoves[i][j][k][l].getText().equals(""))
+                                if (cellmoves[Srow][Scol][k][l].getText().equals(""))
                                 {
-                                    //Disable unselected buttons
-                                    tbuttons[i][j][k][l].setEnabled(false);
-                                    tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                                    //Enable buttons in target range
+                                    tbuttons[Srow][Scol][k][l].setEnabled(true);
+                                    tbuttons[Srow][Scol][k][l].setBackgroundColor(Color.WHITE);
+
+                                    //Change isOpen to show that there was at least one enabled button
+                                    isClosed = false;
                                 }
                             }
                         }
-                    }
-                }
-                //Enable the appropriate buttons if game isn't over
-                if (!CheckBigWin())
-                {
-                    //Check if there are any open spaces
-                    boolean isClosed = true;
 
-                    for (int k = 0; k < 3; k++)
-                    {
-                        for (int l = 0; l < 3; l++)
+                        //If no available buttons, enable all unselected buttons on the board
+                        if (isClosed)
                         {
-                            //Check if a button hasn't been pressed already
-                            if (cellmoves[Srow][Scol][k][l].getText().equals(""))
+                            for (int i = 0; i < 3; i++)
                             {
-                                //Enable buttons in target range
-                                tbuttons[Srow][Scol][k][l].setEnabled(true);
-                                tbuttons[Srow][Scol][k][l].setBackgroundColor(Color.WHITE);
-
-                                //Change isOpen to show that there was at least one enabled button
-                                isClosed = false;
-                            }
-                        }
-                    }
-
-                    //If no available buttons, enable all unselected buttons on the board
-                    if (isClosed)
-                    {
-                        for (int i = 0; i < 3; i++)
-                        {
-                            for (int j = 0; j < 3; j++)
-                            {
-                                for (int k = 0; k < 3; k++)
+                                for (int j = 0; j < 3; j++)
                                 {
-                                    for (int l = 0; l < 3; l++)
+                                    for (int k = 0; k < 3; k++)
                                     {
-                                        //Check if a button hasn't been pressed already
-                                        if (cellmoves[i][j][k][l].getText().equals(""))
+                                        for (int l = 0; l < 3; l++)
                                         {
-                                            //Enable buttons in target range
-                                            tbuttons[i][j][k][l].setEnabled(true);
-                                            tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
+                                            //Check if a button hasn't been pressed already
+                                            if (cellmoves[i][j][k][l].getText().equals(""))
+                                            {
+                                                //Enable buttons in target range
+                                                tbuttons[i][j][k][l].setEnabled(true);
+                                                tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
+                                            }
                                         }
                                     }
                                 }
