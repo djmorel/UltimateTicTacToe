@@ -16,9 +16,13 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
 
     private TextView[][][][] cellmoves = new TextView[3][3][3][3];
 
-    private TextView[][] cellwins = new TextView[3][3];
+    private String[][] cellwins = new String[3][3];
+
+    private Button[][] colorButton = new Button[3][3];
 
     private boolean player1Turn = true;
+
+    private int turn = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +30,21 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_multiplayer);
 
         //Create references for menu buttons
-        Button confirmmpgButton = (Button) findViewById(R.id.confirmmpgButton);
+        final Button confirmmpgButton = (Button) findViewById(R.id.confirmmpgButton);
         Button resetmpgButton = (Button) findViewById(R.id.resetmpgButton);
         Button homempgButton = (Button) findViewById(R.id.homempgButton);
+
+        //Create references for color buttons
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                String colorButtonID = "colorButton" + i + j;
+                int resID = getResources().getIdentifier(colorButtonID,"id",getPackageName());
+                colorButton[i][j] = findViewById(resID);
+                colorButton[i][j].setBackgroundColor(Color.GRAY);
+            }
+        }
 
         //Create references for buttons via a loop
         for (int i = 0; i < 3; i++)
@@ -64,6 +80,13 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                     }
                 }
 
+            }
+        }
+        for(int i = 0; i < 3; i++)
+        {
+            for(int j = 0; j < 3; j++)
+            {
+                cellwins[i][j] = "";
             }
         }
 
@@ -118,7 +141,7 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                     tbuttons[Brow][Bcol][Srow][Scol].setEnabled(false);
 
                     //Make sure the TextView is empty
-                    if(cellmoves[Brow][Bcol][Srow][Scol].getText().equals(""))
+                    if (cellmoves[Brow][Bcol][Srow][Scol].getText().equals(""))
                     {
                         //Write an X or an O
                         if (player1Turn)
@@ -128,9 +151,111 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                         else
                             cellmoves[Brow][Bcol][Srow][Scol].setText("O");
                     }
+                    if (CheckSmallWin(Brow, Bcol))
+                    {
+                        if (cellwins[Brow][Bcol].equals(""))
+                        {
+                            if (player1Turn)
+                            {
+                                cellwins[Brow][Bcol] = "X";
+                                //Change color of cell to reflect territorial control
+                                colorButton[Brow][Bcol].setBackgroundColor(0xFF9bcdff);
+                            }
+                            else {
+                                cellwins[Brow][Bcol] = "O";
+                                //Change color of cell to reflect territorial control
+                                colorButton[Brow][Bcol].setBackgroundColor(0xFFca8491);
+                            }
+                        }
+                        if (CheckBigWin())
+
+                            if (player1Turn) {
+                                player1Wins();
+                                confirmmpgButton.setEnabled(false);
+                            } else {
+                                player2Wins();
+                                confirmmpgButton.setEnabled(false);
+                            }
+
+                    }
+                    if (turn == 80) {
+                        draw();
+                        confirmmpgButton.setEnabled(false);
+                    }
+
+                    turn++;
 
                     //Change player turn
                     player1Turn = !player1Turn;
+
+                    //Disable all of the buttons
+                    //If statement for free play
+                    for (int i = 0; i < 3; i++)
+                    {
+                        for (int j = 0; j < 3; j++)
+                        {
+                            for (int k = 0; k < 3; k++)
+                            {
+                                for (int l = 0; l < 3; l++)
+                                {
+                                    //Check if a button hasn't been pressed already
+                                    if (cellmoves[i][j][k][l].getText().equals(""))
+                                    {
+                                        //Disable unselected buttons
+                                        tbuttons[i][j][k][l].setEnabled(false);
+                                        tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //Enable the appropriate buttons if game isn't over
+                    if (!CheckBigWin())
+                    {
+                        //Check if there are any open spaces
+                        boolean isClosed = true;
+
+                        for (int k = 0; k < 3; k++)
+                        {
+                            for (int l = 0; l < 3; l++)
+                            {
+                                //Check if a button hasn't been pressed already
+                                if (cellmoves[Srow][Scol][k][l].getText().equals(""))
+                                {
+                                    //Enable buttons in target range
+                                    tbuttons[Srow][Scol][k][l].setEnabled(true);
+                                    tbuttons[Srow][Scol][k][l].setBackgroundColor(Color.WHITE);
+
+                                    //Change isOpen to show that there was at least one enabled button
+                                    isClosed = false;
+                                }
+                            }
+                        }
+
+                        //If no available buttons, enable all unselected buttons on the board
+                        if (isClosed)
+                        {
+                            for (int i = 0; i < 3; i++)
+                            {
+                                for (int j = 0; j < 3; j++)
+                                {
+                                    for (int k = 0; k < 3; k++)
+                                    {
+                                        for (int l = 0; l < 3; l++)
+                                        {
+                                            //Check if a button hasn't been pressed already
+                                            if (cellmoves[i][j][k][l].getText().equals(""))
+                                            {
+                                                //Enable buttons in target range
+                                                tbuttons[i][j][k][l].setEnabled(true);
+                                                tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         });
@@ -140,6 +265,7 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
             @Override
             public void onClick(View v) {
                 resetBoard();
+                confirmmpgButton.setEnabled(true);
             }
         });
 
@@ -165,7 +291,19 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                     for (int l = 0; l < 3; l++)
                     {
                         tbuttons[i][j][k][l].setChecked(false);
-                        tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
+
+                        //Check if toggle button was enabled
+                        if ( !(tbuttons[i][j][k][l].isEnabled()) )
+                        {
+                            //If toggle button wasn't enabled, keep its color gray
+                            tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                        }
+                        else
+                        {
+                            //Toggle button was enabled, so reset to white
+                            tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
+                        }
+
                     }
                 }
             }
@@ -197,27 +335,120 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                         tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
                     }
                 }
+                //Reset the cellwins array
+                cellwins[i][j] = "";
+
+                //Reset the colors
+                colorButton[i][j].setBackgroundColor(Color.GRAY);
             }
         }
         //Reset the player1Turn
         player1Turn = true;
+        //Reset the turn count
+        turn = 0;
+    }
+
+    private boolean CheckSmallWin(int Brow, int Bcol)
+    {
+        //Check the rows for TTT
+        for (int i = 0; i < 3; i++)
+        {
+            if (cellmoves[Brow][Bcol][i][0].getText().equals(cellmoves[Brow][Bcol][i][1].getText())
+                    && cellmoves[Brow][Bcol][i][0].getText().equals(cellmoves[Brow][Bcol][i][2].getText())
+                    && !cellmoves[Brow][Bcol][i][0].getText().equals(""))
+            {
+                return true;
+            }
+        }
+
+        //Check the columns for TTT
+        for (int i = 0; i < 3; i++)
+        {
+            if (cellmoves[Brow][Bcol][0][i].getText().equals(cellmoves[Brow][Bcol][1][i].getText())
+                    && cellmoves[Brow][Bcol][0][i].getText().equals(cellmoves[Brow][Bcol][2][i].getText())
+                    && !cellmoves[Brow][Bcol][0][i].getText().equals(""))
+            {
+                return true;
+            }
+        }
+
+        //Check the back slash diagonal (\) for TTT
+        if (cellmoves[Brow][Bcol][0][0].getText().equals(cellmoves[Brow][Bcol][1][1].getText())
+                && cellmoves[Brow][Bcol][0][0].getText().equals(cellmoves[Brow][Bcol][2][2].getText())
+                && !cellmoves[Brow][Bcol][0][0].getText().equals(""))
+        {
+            return true;
+        }
+
+        //Check the forward slash diagonal (/) for TTT
+        if (cellmoves[Brow][Bcol][2][0].getText().equals(cellmoves[Brow][Bcol][1][1].getText())
+                && cellmoves[Brow][Bcol][2][0].getText().equals(cellmoves[Brow][Bcol][0][2].getText())
+                && !cellmoves[Brow][Bcol][2][0].getText().equals(""))
+        {
+            return true;
+        }
+
+        //If nothing above returned true, there isn't a TTT
+        return false;
+    }
+
+    private boolean CheckBigWin()
+    {
+
+        //Check the rows for TTT
+        for (int i = 0; i < 3; i++)
+        {
+            if (cellwins[i][0].equals(cellwins[i][1])
+                    && cellwins[i][0].equals(cellwins[i][2])
+                    && !cellwins[i][0].equals(""))
+            {
+                return true;
+            }
+        }
+
+        //Check the columns for TTT
+        for (int i = 0; i < 3; i++)
+        {
+            if (cellwins[0][i].equals(cellwins[1][i])
+                    && cellwins[0][i].equals(cellwins[2][i])
+                    && !cellwins[0][i].equals(""))
+            {
+                return true;
+            }
+        }
+
+        //Check the back slash diagonal for TTT
+        if (cellwins[0][0].equals(cellwins[1][1])
+                && cellwins[0][0].equals(cellwins[2][2])
+                && !cellwins[0][0].equals(""))
+        {
+            return true;
+        }
+
+        //Check the forward slash diagonal for TTT
+        if (cellwins[2][0].equals(cellwins[1][1])
+                && cellwins[2][0].equals(cellwins[0][2])
+                && !cellwins[2][0].equals(""))
+        {
+            return true;
+        }
+
+        //If nothing above returned true, there isn't a TTT
+        return false;
     }
 
     private void player1Wins()
     {
         Toast.makeText(this, "Player 1 Wins!", Toast.LENGTH_SHORT).show();
-        resetBoard();
     }
 
     private void player2Wins()
     {
         Toast.makeText(this, "Player 2 Wins!", Toast.LENGTH_SHORT).show();
-        resetBoard();
     }
 
     private void draw()
     {
         Toast.makeText(this, "Draw", Toast.LENGTH_SHORT).show();
-        resetBoard();
     }
 }

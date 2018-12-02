@@ -155,7 +155,8 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                     {
                         if (cellwins[Brow][Bcol].equals(""))
                         {
-                            if (player1Turn) {
+                            if (player1Turn)
+                            {
                                 cellwins[Brow][Bcol] = "X";
                                 //Change color of cell to reflect territorial control
                                 colorButton[Brow][Bcol].setBackgroundColor(0xFF9bcdff);
