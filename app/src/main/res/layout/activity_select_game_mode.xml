@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelectGameMode">
+    tools:context=".SelectGameMode"
+    android:background="@android:color/black">
 
     <Button
         android:id="@+id/singleplayerButton"
@@ -54,6 +55,7 @@
         android:layout_marginBottom="8dp"
         android:text="Select Game Mode"
         android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

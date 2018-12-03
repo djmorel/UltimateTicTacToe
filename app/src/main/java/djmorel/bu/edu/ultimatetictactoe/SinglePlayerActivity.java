@@ -159,7 +159,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                             {
                                 cellwins[Brow][Bcol] = "X";
                                 //Change color of cell to reflect territorial control
-                                colorButton[Brow][Bcol].setBackgroundColor(0xFF9bcdff);
+                                colorButton[Brow][Bcol].setBackgroundColor(0xFF6fa2d6);
                             }
                             else{
                                 cellwins[Brow][Bcol] = "O";
@@ -312,7 +312,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
         //Turn on the selected toggle button
         ((ToggleButton) v).setChecked(true);
-        v.setBackgroundColor(Color.GREEN);
+        v.setBackgroundColor(0xFFf07624);
     }
 
     //Resets the board

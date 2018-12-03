@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".How2PlayActivity">
+    tools:context=".How2PlayActivity"
+    android:background="@android:color/black">
 
     <TextView
         android:id="@+id/infoTextView"
@@ -17,6 +18,7 @@
         android:layout_marginRight="4dp"
         android:layout_marginBottom="8dp"
         android:text="Game Info Here"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
