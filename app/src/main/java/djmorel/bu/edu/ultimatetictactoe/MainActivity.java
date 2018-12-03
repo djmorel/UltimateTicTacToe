@@ -14,13 +14,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Create textView
-        TextView apptitleTextView = (TextView) findViewById(R.id.apptitleTextView);
-        TextView apptitle2TextView = (TextView) findViewById(R.id.apptitle2TextView);
-
         //Create buttons
         Button playButton = (Button) findViewById(R.id.playButton);
         Button how2playButton = (Button) findViewById(R.id.how2playButton);
+
+        //Code to resize logo
 
         //Make the playButton go to the SelectGameMode Activity
         playButton.setOnClickListener(new View.OnClickListener() {

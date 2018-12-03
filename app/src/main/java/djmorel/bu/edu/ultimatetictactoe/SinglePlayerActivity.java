@@ -346,7 +346,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
         //Turn on the selected toggle button
         ((ToggleButton) v).setChecked(true);
-        v.setBackgroundColor(Color.GREEN);
+        v.setBackgroundColor(0xFFf07624);
     }
 
     //Resets the board
