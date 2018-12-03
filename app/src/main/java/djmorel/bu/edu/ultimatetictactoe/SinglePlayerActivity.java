@@ -24,8 +24,6 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
     private int turn = 0;
 
-    private boolean player1Turn = true;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -146,29 +144,28 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                         //    cellmoves[Brow][Bcol][Srow][Scol].setText("O");
                     }
                     if (CheckSmallWin(Brow, Bcol)) {
-                        if (cellwins[Brow][Bcol].equals(""))
-                        {
+                        if (cellwins[Brow][Bcol].equals("")) {
                             cellwins[Brow][Bcol] = "X";
 
                             //Change color of cell to reflect territorial control
                             colorButton[Brow][Bcol].setBackgroundColor(0xFF9bcdff);
                         }
-                        if (CheckBigWin()) {
-                            player1Wins();
-                            confirmspgButton.setEnabled(false);
-                        }
                     }
-                    if (turn == 80) {
+                    if (CheckBigWin()) {
+                        player1Wins();
+                        confirmspgButton.setEnabled(false);
+                    }
+                    else if (turn == 80) {
                         draw();
                         confirmspgButton.setEnabled(false);
                     }
 
-                    if (turn != 80)
+                    if (turn != 80 && !CheckBigWin())
                     {
                         turn++;
 
                         //Change player turn
-                        player1Turn = !player1Turn;
+
 
                         //Disable all of the buttons
                         //If statement for free play
@@ -224,22 +221,21 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                         tbuttons[rand3][rand4][rand1][rand2].setChecked(false);
                         tbuttons[rand3][rand4][rand1][rand2].setEnabled(false);
                         if (CheckSmallWin(rand3, rand4)) {
-                            if (cellwins[rand3][rand4].equals(""))
-                            {
+                            if (cellwins[rand3][rand4].equals("")) {
                                 cellwins[rand3][rand4] = "O";
                                 //Change color of cell to reflect territorial control
                                 colorButton[rand3][rand4].setBackgroundColor(0xFFca8491);
                             }
-                            if (CheckBigWin()) {
-                                player2Wins();
-                                confirmspgButton.setEnabled(false);
-                            }
                         }
-                        if (turn == 80) {
+                        if (CheckBigWin()) {
+                            player2Wins();
+                            confirmspgButton.setEnabled(false);
+                        }
+
+                        else if (turn == 80) {
                             draw();
                             confirmspgButton.setEnabled(false);
                         }
-                        player1Turn = !player1Turn;
                         turn++;
                         for (int i = 0; i < 3; i++) {
                             for (int j = 0; j < 3; j++) {
@@ -385,7 +381,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
             }
         }
         //Reset the player1Turn
-        player1Turn = true;
+
         //Reset the turn count
         turn = 0;
     }
