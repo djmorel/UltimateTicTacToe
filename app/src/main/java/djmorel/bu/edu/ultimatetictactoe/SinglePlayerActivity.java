@@ -1,5 +1,7 @@
+
 package djmorel.bu.edu.ultimatetictactoe;
 
+import java.util.Random;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -112,16 +114,11 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                 int Scol = 0;
 
                 //Search for the checked Toggle Button
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        for (int k = 0; k < 3; k++)
-                        {
-                            for (int l = 0; l < 3; l++)
-                            {
-                                if (tbuttons[i][j][k][l].isChecked())
-                                {
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        for (int k = 0; k < 3; k++) {
+                            for (int l = 0; l < 3; l++) {
+                                if (tbuttons[i][j][k][l].isChecked()) {
                                     selButton = true;
                                     Brow = i;
                                     Bcol = j;
@@ -134,52 +131,37 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                 }
 
                 //If a toggle button was checked, remove it from the board
-                if (selButton)
-                {
+                if (selButton) {
                     tbuttons[Brow][Bcol][Srow][Scol].setVisibility(View.INVISIBLE);
                     tbuttons[Brow][Bcol][Srow][Scol].setChecked(false);
                     tbuttons[Brow][Bcol][Srow][Scol].setEnabled(false);
 
                     //Make sure the TextView is empty
-                    if (cellmoves[Brow][Bcol][Srow][Scol].getText().equals(""))
-                    {
+                    if (cellmoves[Brow][Bcol][Srow][Scol].getText().equals("")) {
                         //Write an X or an O
-                        if (player1Turn)
-                        {
+                        if (player1Turn) {
                             cellmoves[Brow][Bcol][Srow][Scol].setText("X");
-                        }
-                        else
+                        } else
                             cellmoves[Brow][Bcol][Srow][Scol].setText("O");
                     }
-                    if (CheckSmallWin(Brow, Bcol))
-                    {
-                        if (cellwins[Brow][Bcol].equals(""))
-                        {
-                            if (player1Turn)
-                            {
+                    if (CheckSmallWin(Brow, Bcol)) {
+                        if (cellwins[Brow][Bcol].equals("")) {
+                            if (player1Turn) {
                                 cellwins[Brow][Bcol] = "X";
                                 //Change color of cell to reflect territorial control
-                                colorButton[Brow][Bcol].setBackgroundColor(0xFF6fa2d6);
-                            }
-                            else{
+                                colorButton[Brow][Bcol].setBackgroundColor(0xFF9bcdff);
+                            } else {
                                 cellwins[Brow][Bcol] = "O";
                                 //Change color of cell to reflect territorial control
                                 colorButton[Brow][Bcol].setBackgroundColor(0xFFca8491);
                             }
                         }
-                        if (CheckBigWin())
-
-                            if (player1Turn) {
-                                player1Wins();
-                                confirmspgButton.setEnabled(false);
-                            } else {
-                                player2Wins();
-                                confirmspgButton.setEnabled(false);
-                            }
-
+                        if (CheckBigWin()) {
+                            player1Wins();
+                            confirmspgButton.setEnabled(false);
+                        }
                     }
-                    if (turn == 80)
-                    {
+                    if (turn == 80) {
                         draw();
                         confirmspgButton.setEnabled(false);
                     }
@@ -191,38 +173,18 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
                     //Disable all of the buttons
                     //If statement for free play
-                    for (int i = 0; i < 3; i++)
-                    {
-                        for (int j = 0; j < 3; j++)
-                        {
-                            for (int k = 0; k < 3; k++)
-                            {
-                                for (int l = 0; l < 3; l++)
-                                {
-                                    //Check if a button hasn't been pressed already
-                                    if (cellmoves[i][j][k][l].getText().equals(""))
-                                    {
-                                        //Disable unselected buttons
-                                        tbuttons[i][j][k][l].setEnabled(false);
-                                        tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //Enable the appropriate buttons if game isn't over
-                    if (!CheckBigWin())
-                    {
-                        //Check if there are any open spaces
-                        boolean isClosed = true;
+                    boolean isClosed = true;
 
-                        for (int k = 0; k < 3; k++)
-                        {
-                            for (int l = 0; l < 3; l++)
-                            {
+                    int rand3;
+                    int rand4;
+                    int rand1;
+                    int rand2;
+                    if (!CheckBigWin()) {
+                        //Check if there are any open spaces
+                        for (int k = 0; k < 3; k++) {
+                            for (int l = 0; l < 3; l++) {
                                 //Check if a button hasn't been pressed already
-                                if (cellmoves[Srow][Scol][k][l].getText().equals(""))
-                                {
+                                if (cellmoves[Srow][Scol][k][l].getText().equals("")) {
                                     //Enable buttons in target range
                                     tbuttons[Srow][Scol][k][l].setEnabled(true);
                                     tbuttons[Srow][Scol][k][l].setBackgroundColor(Color.WHITE);
@@ -232,21 +194,93 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                                 }
                             }
                         }
+                    }
+                    if(!isClosed) {
+                        Random r = new Random();
+                        rand1 = r.nextInt(3);
+                        rand2 = r.nextInt(3);
+                        rand3 = Srow;
+                        rand4 = Scol;
+                        while (cellmoves[Srow][Scol][rand1][rand2].getText().equals("X") || cellmoves[Srow][Scol][rand1][rand2].getText().equals("O")) {
+                            rand1 = r.nextInt(3);
+                            rand2 = r.nextInt(3);
+                        }
+                    }
+                    else{
+                        Random r = new Random();
+                        rand1 = r.nextInt(3);
+                        rand2 = r.nextInt(3);
+                        rand3 = r.nextInt(3);
+                        rand4 = r.nextInt(3);
+                        while (cellmoves[rand3][rand4][rand1][rand2].getText().equals("X") || cellmoves[rand3][rand4][rand1][rand2].getText().equals("O")) {
+                            rand1 = r.nextInt(3);
+                            rand2 = r.nextInt(3);
+                            rand3 = r.nextInt(3);
+                            rand4 = r.nextInt(3);
+                        }
+                    }
+                    //Computer makes a move now
+                    cellmoves[rand3][rand4][rand1][rand2].setText("O");
+                    tbuttons[rand3][rand4][rand1][rand2].setVisibility(View.INVISIBLE);
+                    tbuttons[rand3][rand4][rand1][rand2].setChecked(false);
+                    tbuttons[rand3][rand4][rand1][rand2].setEnabled(false);
+                    if (CheckSmallWin(rand3, rand4)) {
+                        if (cellwins[rand3][rand4].equals("")){
+                            cellwins[rand3][rand4] = "O";
+                            //Change color of cell to reflect territorial control
+                            colorButton[rand3][rand4].setBackgroundColor(0xFFca8491);
+                        }
+                        if (CheckBigWin()) {
+                            player2Wins();
+                            confirmspgButton.setEnabled(false);
+                        }
+                    }
+                    if (turn == 80) {
+                        draw();
+                        confirmspgButton.setEnabled(false);
+                    }
+                    player1Turn = !player1Turn;
+                    turn++;
+                    for (int i = 0; i < 3; i++) {
+                        for (int j = 0; j < 3; j++) {
+                            for (int k = 0; k < 3; k++) {
+                                for (int l = 0; l < 3; l++) {
+                                    //Check if a button hasn't been pressed already
+                                    if (cellmoves[i][j][k][l].getText().equals("")) {
+                                        //Disable unselected buttons
+                                        tbuttons[i][j][k][l].setEnabled(false);
+                                        tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //Enable the appropriate buttons if game isn't over
+                    if (!CheckBigWin()) {
+                        //Check if there are any open spaces
+                        isClosed = true;
+                        for (int k = 0; k < 3; k++) {
+                            for (int l = 0; l < 3; l++) {
+                                //Check if a button hasn't been pressed already
+                                if (cellmoves[rand1][rand2][k][l].getText().equals("")) {
+                                    //Enable buttons in target range
+                                    tbuttons[rand1][rand2][k][l].setEnabled(true);
+                                    tbuttons[rand1][rand2][k][l].setBackgroundColor(Color.WHITE);
+
+                                    //Change isOpen to show that there was at least one enabled button
+                                    isClosed = false;
+                                }
+                            }
+                        }
 
                         //If no available buttons, enable all unselected buttons on the board
-                        if (isClosed)
-                        {
-                            for (int i = 0; i < 3; i++)
-                            {
-                                for (int j = 0; j < 3; j++)
-                                {
-                                    for (int k = 0; k < 3; k++)
-                                    {
-                                        for (int l = 0; l < 3; l++)
-                                        {
+                        if (isClosed) {
+                            for (int i = 0; i < 3; i++) {
+                                for (int j = 0; j < 3; j++) {
+                                    for (int k = 0; k < 3; k++) {
+                                        for (int l = 0; l < 3; l++) {
                                             //Check if a button hasn't been pressed already
-                                            if (cellmoves[i][j][k][l].getText().equals(""))
-                                            {
+                                            if (cellmoves[i][j][k][l].getText().equals("")) {
                                                 //Enable buttons in target range
                                                 tbuttons[i][j][k][l].setEnabled(true);
                                                 tbuttons[i][j][k][l].setBackgroundColor(Color.WHITE);
@@ -312,7 +346,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
         //Turn on the selected toggle button
         ((ToggleButton) v).setChecked(true);
-        v.setBackgroundColor(0xFFf07624);
+        v.setBackgroundColor(Color.GREEN);
     }
 
     //Resets the board
