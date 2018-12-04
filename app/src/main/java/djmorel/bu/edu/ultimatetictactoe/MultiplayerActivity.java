@@ -12,6 +12,7 @@ import android.widget.ToggleButton;
 
 public class MultiplayerActivity extends AppCompatActivity implements View.OnClickListener{
 
+
     private ToggleButton[][][][] tbuttons = new ToggleButton[3][3][3][3];
 
     private TextView[][][][] cellmoves = new TextView[3][3][3][3];

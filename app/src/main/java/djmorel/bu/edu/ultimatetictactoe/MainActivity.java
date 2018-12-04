@@ -1,6 +1,7 @@
 package djmorel.bu.edu.ultimatetictactoe;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(how2playIntent);
             }
         });
+        //Adding Music
+        MediaPlayer background=MediaPlayer.create(MainActivity.this,R.raw.background);
+        background.start();
+        background.setLooping(true);
     }
 }

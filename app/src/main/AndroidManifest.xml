@@ -25,6 +25,7 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".MultiplayerActivity"
             android:screenOrientation="portrait"></activity>
+
     </application>
 
 </manifest>
