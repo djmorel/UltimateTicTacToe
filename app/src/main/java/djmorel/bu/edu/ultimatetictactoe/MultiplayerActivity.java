@@ -90,6 +90,13 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
             }
         }
 
+
+
+        //Code to scale size of TTT board based on device
+        //Make sure it doesn't mess with the button layout!
+
+
+
         //make homempgButton go back to the MainActivity
         homempgButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -172,9 +179,41 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                             if (player1Turn) {
                                 player1Wins();
                                 confirmmpgButton.setEnabled(false);
+
+                                //Disable unselected tile buttons
+                                for (int i = 0; i < 3; i++) {
+                                    for (int j = 0; j < 3; j++) {
+                                        for (int k = 0; k < 3; k++) {
+                                            for (int l = 0; l < 3; l++) {
+                                                //Check if a button hasn't been pressed already
+                                                if (cellmoves[i][j][k][l].getText().equals("")) {
+                                                    //Disable unselected buttons
+                                                    tbuttons[i][j][k][l].setEnabled(false);
+                                                    tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             } else {
                                 player2Wins();
                                 confirmmpgButton.setEnabled(false);
+
+                                //Disable unselected tile buttons
+                                for (int i = 0; i < 3; i++) {
+                                    for (int j = 0; j < 3; j++) {
+                                        for (int k = 0; k < 3; k++) {
+                                            for (int l = 0; l < 3; l++) {
+                                                //Check if a button hasn't been pressed already
+                                                if (cellmoves[i][j][k][l].getText().equals("")) {
+                                                    //Disable unselected buttons
+                                                    tbuttons[i][j][k][l].setEnabled(false);
+                                                    tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
 
                     }
@@ -268,12 +307,6 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                 confirmmpgButton.setEnabled(true);
             }
         });
-
-
-
-        //Code to scale size of TTT board based on device
-        //Make sure it doesn't mess with the button layout!
-
 
     }
 

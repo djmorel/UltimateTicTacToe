@@ -90,6 +90,13 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
             }
         }
 
+
+
+        //Code to scale size of TTT board based on device
+        //Make sure it doesn't mess with the button layout!
+        
+
+
         //make homespgButton go back to the MainActivity
         homespgButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,6 +161,22 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                     if (CheckBigWin()) {
                         player1Wins();
                         confirmspgButton.setEnabled(false);
+
+                        //Disable unselected tile buttons
+                        for (int i = 0; i < 3; i++) {
+                            for (int j = 0; j < 3; j++) {
+                                for (int k = 0; k < 3; k++) {
+                                    for (int l = 0; l < 3; l++) {
+                                        //Check if a button hasn't been pressed already
+                                        if (cellmoves[i][j][k][l].getText().equals("")) {
+                                            //Disable unselected buttons
+                                            tbuttons[i][j][k][l].setEnabled(false);
+                                            tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                     else if (turn == 80) {
                         draw();
@@ -230,6 +253,22 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                         if (CheckBigWin()) {
                             player2Wins();
                             confirmspgButton.setEnabled(false);
+
+                            //Disable unselected tile buttons
+                            for (int i = 0; i < 3; i++) {
+                                for (int j = 0; j < 3; j++) {
+                                    for (int k = 0; k < 3; k++) {
+                                        for (int l = 0; l < 3; l++) {
+                                            //Check if a button hasn't been pressed already
+                                            if (cellmoves[i][j][k][l].getText().equals("")) {
+                                                //Disable unselected buttons
+                                                tbuttons[i][j][k][l].setEnabled(false);
+                                                tbuttons[i][j][k][l].setBackgroundColor(Color.LTGRAY);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
 
                         else if (turn == 80) {
@@ -288,12 +327,6 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                             }
                         }
                     }
-
-                    //turn++;
-
-                    //Change player turn
-                    //player1Turn = !player1Turn;
-
                 }
             }
         });
@@ -306,12 +339,6 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                 confirmspgButton.setEnabled(true);
             }
         });
-
-
-
-        //Code to scale size of TTT board based on device
-        //Make sure it doesn't mess with the button layout!
-
 
     }
 
