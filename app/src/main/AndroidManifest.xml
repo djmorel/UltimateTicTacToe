@@ -9,17 +9,22 @@
         android:roundIcon="@mipmap/ultimatettt_logo_simple"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectGameMode" />
-        <activity android:name=".How2PlayActivity" />
-        <activity android:name=".SinglePlayerActivity" />
-        <activity android:name=".MultiplayerActivity"></activity>
+        <activity android:name=".SelectGameMode"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".How2PlayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SinglePlayerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MultiplayerActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

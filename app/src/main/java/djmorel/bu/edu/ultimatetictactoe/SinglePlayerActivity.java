@@ -94,7 +94,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
         //Code to scale size of TTT board based on device
         //Make sure it doesn't mess with the button layout!
-        
+
 
 
         //make homespgButton go back to the MainActivity
