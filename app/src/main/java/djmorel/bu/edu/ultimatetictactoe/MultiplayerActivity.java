@@ -2,6 +2,7 @@ package djmorel.bu.edu.ultimatetictactoe;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+
 
 public class MultiplayerActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -34,6 +36,11 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
         final Button confirmmpgButton = (Button) findViewById(R.id.confirmmpgButton);
         Button resetmpgButton = (Button) findViewById(R.id.resetmpgButton);
         Button homempgButton = (Button) findViewById(R.id.homempgButton);
+
+        //Adding Music
+        final MediaPlayer background=MediaPlayer.create(MultiplayerActivity.this,R.raw.background);
+        background.start();
+        background.setLooping(true);
 
         //Create references for color buttons
         for (int i = 0; i < 3; i++)
@@ -102,6 +109,7 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
         homempgButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                background.stop();
                 Intent homempgIntent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(homempgIntent);
             }
