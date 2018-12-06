@@ -27,7 +27,7 @@
 
     <Button
         android:id="@+id/homespgButton"
-        android:layout_width="@dimen/_104sdp"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginLeft="@dimen/_8sdp"
@@ -46,7 +46,7 @@
 
     <Button
         android:id="@+id/confirmspgButton"
-        android:layout_width="@dimen/_109sdp"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginLeft="@dimen/_8sdp"
@@ -64,7 +64,7 @@
 
     <Button
         android:id="@+id/resetspgButton"
-        android:layout_width="@dimen/_107sdp"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginLeft="@dimen/_8sdp"
