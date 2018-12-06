@@ -9,14 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="315dp"
-        android:layout_height="315dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="@dimen/_246sdp"
+        android:layout_height="@dimen/_246sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,16 +27,17 @@
 
     <Button
         android:id="@+id/homempgButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="@dimen/_104sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:text="Return Home"
         android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,16 +46,15 @@
 
     <Button
         android:id="@+id/confirmmpgButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="@dimen/_109sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:text="Confirm Move"
         android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
@@ -64,16 +64,17 @@
 
     <Button
         android:id="@+id/resetmpgButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="@dimen/_107sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:text="Reset Game"
         android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.891"
@@ -83,8 +84,8 @@
 
     <Button
         android:id="@+id/colorButton00"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -98,8 +99,8 @@
 
     <Button
         android:id="@+id/colorButton01"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -113,8 +114,8 @@
 
     <Button
         android:id="@+id/colorButton02"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -128,8 +129,8 @@
 
     <Button
         android:id="@+id/colorButton10"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -143,8 +144,8 @@
 
     <Button
         android:id="@+id/colorButton11"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -158,8 +159,8 @@
 
     <Button
         android:id="@+id/colorButton12"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -173,8 +174,8 @@
 
     <Button
         android:id="@+id/colorButton20"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -188,8 +189,8 @@
 
     <Button
         android:id="@+id/colorButton21"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -203,8 +204,8 @@
 
     <Button
         android:id="@+id/colorButton22"
-        android:layout_width="98dp"
-        android:layout_height="98dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:enabled="false"
@@ -224,8 +225,8 @@
     //Top row
     <ToggleButton
         android:id="@+id/tButton0000"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -238,12 +239,14 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.006" />
+
     <TextView
         android:id="@+id/TextView0000"
-        android:layout_width="18dp"
-        android:layout_height="31dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:text=""
-        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_20ssp"
         app:layout_constraintBottom_toBottomOf="@+id/tButton0000"
         app:layout_constraintEnd_toEndOf="@+id/tButton0000"
         app:layout_constraintHorizontal_bias="0.47"
@@ -252,8 +255,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0001"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -268,10 +271,10 @@
         app:layout_constraintVertical_bias="0.006" />
     <TextView
         android:id="@+id/TextView0001"
-        android:layout_width="18dp"
-        android:layout_height="31dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:text=""
-        android:textSize="24sp"
+        android:textSize="@dimen/_20ssp"
         app:layout_constraintBottom_toBottomOf="@+id/tButton0001"
         app:layout_constraintEnd_toEndOf="@+id/tButton0001"
         app:layout_constraintHorizontal_bias="0.62"
@@ -280,8 +283,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0002"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -309,8 +312,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton0010"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -337,8 +340,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0011"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -365,8 +368,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0012"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -394,8 +397,8 @@
     //Bottom row
     <ToggleButton
         android:id="@+id/tButton0020"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -422,8 +425,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0021"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -450,8 +453,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0022"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -482,8 +485,8 @@
     //Top row
     <ToggleButton
         android:id="@+id/tButton0100"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -510,8 +513,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0101"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -538,8 +541,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0102"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -567,8 +570,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton0110"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -595,8 +598,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0111"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -623,8 +626,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0112"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -652,8 +655,8 @@
     //Bottom row
     <ToggleButton
         android:id="@+id/tButton0120"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -680,8 +683,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0121"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -708,8 +711,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0122"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -740,8 +743,8 @@
     //Top row
     <ToggleButton
         android:id="@+id/tButton0200"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -768,8 +771,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0201"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -796,8 +799,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0202"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -825,8 +828,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton0210"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -853,8 +856,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0211"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -881,8 +884,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0212"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -910,8 +913,8 @@
     //Bottom row
     <ToggleButton
         android:id="@+id/tButton0220"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -938,8 +941,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0221"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -966,8 +969,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton0222"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1002,8 +1005,8 @@
 
     <ToggleButton
         android:id="@+id/tButton1000"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1030,8 +1033,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1001"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1058,8 +1061,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1002"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1087,8 +1090,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton1010"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1115,8 +1118,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1011"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1143,8 +1146,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1012"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1173,8 +1176,8 @@
 
     <ToggleButton
         android:id="@+id/tButton1020"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1201,8 +1204,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1021"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1229,8 +1232,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1022"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1261,8 +1264,8 @@
     //Top row
     <ToggleButton
         android:id="@+id/tButton1100"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1289,8 +1292,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1101"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1317,8 +1320,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1102"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1346,8 +1349,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton1110"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1374,8 +1377,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1111"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1402,8 +1405,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1112"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1431,8 +1434,8 @@
     //Bottom row
     <ToggleButton
         android:id="@+id/tButton1120"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1459,8 +1462,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1121"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1487,8 +1490,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1122"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1519,8 +1522,8 @@
     //Top row
     <ToggleButton
         android:id="@+id/tButton1200"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1547,8 +1550,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1201"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1575,8 +1578,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1202"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1604,8 +1607,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton1210"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1632,8 +1635,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1211"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1660,8 +1663,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1212"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1689,8 +1692,8 @@
     //Bottom row
     <ToggleButton
         android:id="@+id/tButton1220"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1717,8 +1720,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1221"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1745,8 +1748,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton1222"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1780,8 +1783,8 @@
 
     <ToggleButton
         android:id="@+id/tButton2000"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1808,8 +1811,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2001"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1836,8 +1839,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2002"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1865,8 +1868,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton2010"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1893,8 +1896,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2011"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -1921,8 +1924,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2012"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1951,8 +1954,8 @@
 
     <ToggleButton
         android:id="@+id/tButton2020"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -1979,8 +1982,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2021"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2007,8 +2010,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2022"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2039,8 +2042,8 @@
     //Top row
     <ToggleButton
         android:id="@+id/tButton2100"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2067,8 +2070,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2101"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -2095,8 +2098,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2102"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2124,8 +2127,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton2110"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -2152,8 +2155,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2111"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -2180,8 +2183,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2112"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2209,8 +2212,8 @@
     //Bottom row
     <ToggleButton
         android:id="@+id/tButton2120"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2237,8 +2240,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2121"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2265,8 +2268,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2122"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2297,8 +2300,8 @@
     //Top row
     <ToggleButton
         android:id="@+id/tButton2200"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2325,8 +2328,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2201"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -2353,8 +2356,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2202"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2382,8 +2385,8 @@
     //Middle row
     <ToggleButton
         android:id="@+id/tButton2210"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -2410,8 +2413,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2211"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:textOff=""
         android:textOn=""
         android:background="#ffffff"
@@ -2438,8 +2441,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2212"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2467,8 +2470,8 @@
     //Bottom row
     <ToggleButton
         android:id="@+id/tButton2220"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2495,8 +2498,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2221"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
@@ -2523,8 +2526,8 @@
         app:layout_constraintVertical_bias="0.63" />
     <ToggleButton
         android:id="@+id/tButton2222"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
         android:background="#ffffff"
         android:textAllCaps="false"
         android:textOff=""
