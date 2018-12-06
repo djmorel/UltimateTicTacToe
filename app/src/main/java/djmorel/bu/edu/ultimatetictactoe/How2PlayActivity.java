@@ -15,7 +15,7 @@ public class How2PlayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_how2_play);
 
         //Create TextView
-        TextView infoTextView = (TextView) findViewById(R.id.infoTextView);
+        TextView infoTextView = (TextView) findViewById(R.id.infoTextView1);
 
         //Create Button
         Button homeh2pButton = (Button) findViewById(R.id.homeh2pButton);

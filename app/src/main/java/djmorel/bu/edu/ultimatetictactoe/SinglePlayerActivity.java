@@ -4,6 +4,7 @@ package djmorel.bu.edu.ultimatetictactoe;
 import java.util.Random;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,10 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_player);
+        //Adding Music
+      final MediaPlayer background=MediaPlayer.create(SinglePlayerActivity.this,R.raw.background);
+        background.start();
+        background.setLooping(true);
 
         //Create Buttons
         final Button confirmspgButton = (Button) findViewById(R.id.confirmspgButton);
@@ -101,6 +106,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         homespgButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                background.stop();
                 Intent homespgIntent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(homespgIntent);
             }

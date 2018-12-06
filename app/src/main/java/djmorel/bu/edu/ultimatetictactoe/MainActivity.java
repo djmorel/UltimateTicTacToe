@@ -39,9 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(how2playIntent);
             }
         });
-        //Adding Music
-        MediaPlayer background=MediaPlayer.create(MainActivity.this,R.raw.background);
-        background.start();
-        background.setLooping(true);
+
     }
 }
