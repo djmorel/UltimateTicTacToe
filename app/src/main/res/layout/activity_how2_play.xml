@@ -99,7 +99,7 @@
         android:layout_marginEnd="@dimen/_8sdp"
         android:layout_marginRight="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:text="3. Player 1 can only mark a square in the small board corresponding to the square marked by Player 2. If the small board is entirely full, the player can make a move wherever they choose. This rule continues for the entirety of the game,"
+        android:text="3) Player 1 can only mark a square in the small board corresponding to the square marked by Player 2. If the small board is entirley full, the player can pick any square. "
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintBottom_toBottomOf="parent"
