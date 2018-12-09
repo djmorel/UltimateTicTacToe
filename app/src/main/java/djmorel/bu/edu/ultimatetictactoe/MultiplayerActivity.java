@@ -90,6 +90,8 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
 
             }
         }
+
+        //Set the cellwins array to be blank
         for(int i = 0; i < 3; i++)
         {
             for(int j = 0; j < 3; j++)
@@ -97,13 +99,6 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
                 cellwins[i][j] = "";
             }
         }
-
-
-
-        //Code to scale size of TTT board based on device
-        //Make sure it doesn't mess with the button layout!
-
-
 
         //make homempgButton go back to the MainActivity
         homempgButton.setOnClickListener(new View.OnClickListener() {
@@ -479,16 +474,19 @@ public class MultiplayerActivity extends AppCompatActivity implements View.OnCli
         return false;
     }
 
+    //Print Player 1 Wins
     private void player1Wins()
     {
         Toast.makeText(this, "Player 1 Wins!", Toast.LENGTH_SHORT).show();
     }
 
+    //Print Player 2 Wins
     private void player2Wins()
     {
         Toast.makeText(this, "Player 2 Wins!", Toast.LENGTH_SHORT).show();
     }
 
+    //Print Draw
     private void draw()
     {
         Toast.makeText(this, "Draw", Toast.LENGTH_SHORT).show();

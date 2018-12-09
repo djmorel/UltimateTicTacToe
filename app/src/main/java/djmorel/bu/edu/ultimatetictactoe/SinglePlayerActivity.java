@@ -34,7 +34,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         background.start();
         background.setLooping(true);
 
-        //Create Buttons
+        //Create references for buttons
         final Button confirmspgButton = (Button) findViewById(R.id.confirmspgButton);
         Button resetspgButton = (Button) findViewById(R.id.resetspgButton);
         Button homespgButton = (Button) findViewById(R.id.homespgButton);
@@ -69,7 +69,7 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
             }
         }
 
-        //Create references for the TextView
+        //Create references for the TextViews
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -87,6 +87,8 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
 
             }
         }
+
+        //Set the cellwins array to be blank
         for(int i = 0; i < 3; i++)
         {
             for(int j = 0; j < 3; j++)
@@ -94,13 +96,6 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
                 cellwins[i][j] = "";
             }
         }
-
-
-
-        //Code to scale size of TTT board based on device
-        //Make sure it doesn't mess with the button layout!
-
-
 
         //make homespgButton go back to the MainActivity
         homespgButton.setOnClickListener(new View.OnClickListener() {
@@ -508,16 +503,19 @@ public class SinglePlayerActivity extends AppCompatActivity implements View.OnCl
         return false;
     }
 
+    //Print Player 1 Wins
     private void player1Wins()
     {
         Toast.makeText(this, "Player 1 Wins!", Toast.LENGTH_LONG).show();
     }
 
+    //Print Player 2 Wins
     private void player2Wins()
     {
         Toast.makeText(this, "Player 2 Wins!", Toast.LENGTH_LONG).show();
     }
 
+    //Print Draw
     private void draw()
     {
         Toast.makeText(this, "Draw", Toast.LENGTH_LONG).show();

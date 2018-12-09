@@ -75,7 +75,7 @@
         android:layout_marginEnd="@dimen/_8sdp"
         android:layout_marginRight="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_65sdp"
-        android:text="2. Player 2 cannon play anywhere they want. Player 2 must play in the small board corresponding to the square Player 1 marked.
+        android:text="2. Player 2 cannot play anywhere they want. Player 2 must play in the small board corresponding to the square Player 1 marked.
 "
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"

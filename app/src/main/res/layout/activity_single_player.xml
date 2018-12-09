@@ -1855,7 +1855,7 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintHorizontal_bias="0.8118"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.62" />
@@ -1863,7 +1863,7 @@
     <TextView
         android:id="@+id/TextView1220"
         android:layout_width="@dimen/_24sdp"
-        android:layout_height="@dimen/_24sdp"
+        android:layout_height="29dp"
         android:gravity="center"
         android:text=""
         android:textSize="@dimen/_20ssp"
@@ -1898,8 +1898,12 @@
         android:gravity="center"
         android:text=""
         android:textSize="@dimen/_20ssp"
-        tools:layout_editor_absoluteX="270dp"
-        tools:layout_editor_absoluteY="222dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tButton1221"
+        app:layout_constraintEnd_toEndOf="@+id/tButton1221"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="@+id/tButton1221"
+        app:layout_constraintTop_toTopOf="@+id/tButton1221"
+        app:layout_constraintVertical_bias="0.612" />
 
     <ToggleButton
         android:id="@+id/tButton1222"

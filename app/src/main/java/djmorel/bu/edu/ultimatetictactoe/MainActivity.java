@@ -16,11 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Create buttons
+        //Create references for buttons
         Button playButton = (Button) findViewById(R.id.playButton);
         Button how2playButton = (Button) findViewById(R.id.how2playButton);
-
-        //Code to resize logo
 
         //Make the playButton go to the SelectGameMode Activity
         playButton.setOnClickListener(new View.OnClickListener() {
