@@ -10,11 +10,6 @@ We created this app as part of our EC 327 (Intro to Software Engineering) final 
 
 The game has a single and multiplayer version of the game where a 
 
-# ScreenShoots
-![UltimateTicTacToe](app/src/main/res/drawable/ttt1.png)
-![UltimateTicTacToe](app/src/main/res/drawable/ttt2.PNG)
-![UltimateTicTacToe](app/src/main/res/drawable/ttt3.PNG)
-
 
 # Features
 The game has both single player and multiplayer options. There is a sweet tune playing in the background during each game as well. The game has a confirm move button to prevent accidental moves which can occur when playing on smaller screens. 
@@ -23,8 +18,8 @@ For new users, the game also has a How To Play manual which explains the rules w
 # Code Example
 
 # Installation
-### The app is available on playstore through the link :
-### You can also download the app from github.
+The app is available on playstore through the link :
+You can also download the app from github.
 -Download Git (https://git-scm.com/downloads)
 -Open Android Studio
 -Check out project from Version Control > Git
@@ -33,10 +28,19 @@ For new users, the game also has a How To Play manual which explains the rules w
 -Click on Clone
 -Import Project from External Source and finish
 
-
-# Tests
-
 # How to use?
+
+There is a big 3x3 game board which contains 9  smaller 3x3 game boards. These small game boards are just like traditional 3x3 Tic-Tac-Toe boards
+
+Player 1 can choose to play in any small board he wants. This move affects which board player 2 can play in
+Whichever small box the current player makes a move in, the next player has to play in the same box of the larger board 
+![UltimateTicTacToe](app/src/main/res/drawable/ttt1.png)
+
+Once the player wins three in a row in a small board, they mark the board (blue or red)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt2.PNG)
+
+Once the player marks three small boards in a row, they win the game 
+![UltimateTicTacToe](app/src/main/res/drawable/ttt3.PNG)
 
 
 Android Studio Project
