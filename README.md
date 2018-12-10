@@ -10,8 +10,8 @@ The game has a single and multiplayer version of the game where a
 
 # ScreenShoots
 ![UltimateTicTacToe](app/src/main/res/drawable/ttt1.png)
-![UltimateTicTacToe](app/src/main/res/drawable/ttt2.png)
-![UltimateTicTacToe](app/src/main/res/drawable/ttt3.png)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt2.PNG)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt3.PNG)
 
 
 # Features
