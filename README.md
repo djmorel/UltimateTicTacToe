@@ -2,9 +2,7 @@
 ## Created by Team Tic-Tac & Co
 ### *by the combined efforts of DJ Morel, Hang Liu, Hussain Valiuddin, Mari Tsunoda, William Willigrod*
 
-![UltimateTicTacToe](app/src/main/res/drawable/ultimatettt_logo_design.png){:class="img-responsive"}
-![UltimateTicTacToe](app/src/main/res/drawable/ultimatettt_logo_design.png){:height="50%" width="50%"}
-![UltimateTicTacToe](app/src/main/res/drawable/ultimatettt_logo_design.png){:height="700px" width="400px"}
+![UltimateTicTacToe](app/src/main/res/drawable/ultimatettt.png)
 
 
 # Motivation
