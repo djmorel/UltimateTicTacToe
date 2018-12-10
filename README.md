@@ -1,4 +1,4 @@
-<img src="https://github.com/djmorel/UltimateTicTacToe/blob/master/app/src/main/res/drawable/ultimatettt_logo_design.png" width="400">
+<img src="https://github.com/djmorel/UltimateTicTacToe/blob/master/app/src/main/res/drawable/ultimatettt_logo_design.png" width="300">
 
 # **UltimateTicTacToe**
 ## Created by Team Tic-Tac & Co
