@@ -34,18 +34,20 @@ You can also download the app from github.
 
 There is a big 3x3 game board which contains 9  smaller 3x3 game boards. These small game boards are just like traditional 3x3 Tic-Tac-Toe boards
 
+![UltimateTicTacToe](app/src/main/res/drawable/ttt1.png)
+
 Player 1 starts with an X and can choose to play in any small board. This move affects which board player 2 can play in.
 Whichever small box the current player makes a move in, the next player has to play in the same box of the larger board 
 
-![UltimateTicTacToe](app/src/main/res/drawable/ttt1.png)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt2.PNG)
 
 Once the player wins three in a row in a small board, they mark the board (blue or red)
 
-![UltimateTicTacToe](app/src/main/res/drawable/ttt2.PNG)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt3.PNG)
 
 Once the player marks three small boards in a row, they win the game
 
-![UltimateTicTacToe](app/src/main/res/drawable/ttt3.PNG)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt4.PNG)
 
 
 Android Studio Project
