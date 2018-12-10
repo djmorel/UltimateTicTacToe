@@ -23,8 +23,8 @@ For new users, the game also has a How To Play manual which explains the rules w
 # Code Example
 
 # Installation
-###The app is available on playstore through the link :
-###You can also download the app from github.
+### The app is available on playstore through the link :
+### You can also download the app from github.
 -Download Git (https://git-scm.com/downloads)
 -Open Android Studio
 -Check out project from Version Control > Git
