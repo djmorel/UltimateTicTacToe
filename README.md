@@ -9,9 +9,9 @@ We created this app as part of our EC 327 (Intro to Software Engineering) final 
 The game has a single and multiplayer version of the game where a 
 
 # ScreenShoots
-![UltimateTicTacToe](app/src/main/res/drawable/ultimatettt_logo.png)
-![UltimateTicTacToe](app/src/main/res/drawable/ultimatettt_logo.png)
-![UltimateTicTacToe](app/src/main/res/drawable/ultimatettt_logo.png)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt1.png)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt2.png)
+![UltimateTicTacToe](app/src/main/res/drawable/ttt3.png)
 
 
 # Features
