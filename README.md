@@ -17,7 +17,7 @@ A reset button allows for the game to be started all over again
 # Code Example
 
 # Installation
-The app is available on playstore through the [link] (https://play.google.com/store/apps/details?id=djmorel.bu.edu.ultimatetictactoe&hl=en) : https://play.google.com/store/apps/details?id=djmorel.bu.edu.ultimatetictactoe&hl=en
+The app is available on playstore through the link: https://play.google.com/store/apps/details?id=djmorel.bu.edu.ultimatetictactoe&hl=en
 
 You can also download the app from github.
 ```
