@@ -22,7 +22,7 @@ You can also download the app from github.
 -Download Git (https://git-scm.com/downloads)
 -Open Android Studio
 -Check out project from Version Control > Git
--Copy the GitHub repository URL (https://github.com/djmorel/UltimateTicTacToe.git) and paste it into the URL pop up
+-Copy the GitHub repository [URL](https://github.com/djmorel/UltimateTicTacToe.git) and paste it into the URL pop up
 -Click on Test
 -Click on Clone
 -Import Project from External Source and finish
