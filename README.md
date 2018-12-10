@@ -39,7 +39,8 @@ Whichever small box the current player makes a move in, the next player has to p
 Once the player wins three in a row in a small board, they mark the board (blue or red)
 ![UltimateTicTacToe](app/src/main/res/drawable/ttt2.PNG)
 
-Once the player marks three small boards in a row, they win the game 
+Once the player marks three small boards in a row, they win the game
+
 ![UltimateTicTacToe](app/src/main/res/drawable/ttt3.PNG)
 
 
