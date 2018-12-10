@@ -3,6 +3,7 @@
 ### *by the combined efforts of DJ Morel, Hang Liu, Hussain Valiuddin, Mari Tsunoda, William Willigrod*
 
 ![UltimateTicTacToe](app/src/main/res/drawable/ultimatettt_logo.png)
+<img src="https://github.com/favicon.ico" width="48">
 
 
 # Motivation
