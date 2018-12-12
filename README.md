@@ -14,8 +14,6 @@ The game has a confirm move button to prevent accidental moves which can occur w
 For new users, the game also has a How To Play manual which explains the rules which are pretty simple and build upon the rules of regular Tic-Tac-Toe.
 A reset button allows for the game to be started all over again
 
-# Code Example
-
 # Installation
 The app is available on playstore through the link: https://play.google.com/store/apps/details?id=djmorel.bu.edu.ultimatetictactoe&hl=en
 
